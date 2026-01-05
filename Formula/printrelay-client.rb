@@ -1,13 +1,13 @@
 class PrintrelayClient < Formula
   desc "Cloud print relay client - connects local printers to PrintRelay server"
   homepage "https://github.com/schappim/print-relay"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/schappim/print-relay/releases/download/v1.0.0/printrelay-client-darwin-amd64.tar.gz"
-      sha256 "4803c57a5daddd3c3131117dd2393798489d16f87266085b743fb6c802183121"
+      url "https://github.com/schappim/print-relay/releases/download/v1.1.0/printrelay-client-darwin-amd64.tar.gz"
+      sha256 "fcf024f924f0347645e60c5d275ad6cc3acfaa15ba776ce89eef5de9bf22ad81"
 
       def install
         bin.install "printrelay-client-darwin-amd64" => "printrelay-client"
@@ -15,8 +15,8 @@ class PrintrelayClient < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/schappim/print-relay/releases/download/v1.0.0/printrelay-client-darwin-arm64.tar.gz"
-      sha256 "b95ada6263f937a92efbeb24f58974da234491dfe91504dc583b8fa48f16b42a"
+      url "https://github.com/schappim/print-relay/releases/download/v1.1.0/printrelay-client-darwin-arm64.tar.gz"
+      sha256 "320bd9033b36ea0aab87f937f66dd6b352358d99bf4a2c0e7d6ae1412386ea6b"
 
       def install
         bin.install "printrelay-client-darwin-arm64" => "printrelay-client"
